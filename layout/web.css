@@ -1,0 +1,125 @@
+:root {
+    --coklat1: #805d44;
+    --coklat2: #9c5921;
+    --coklat3: #f1ece8;
+    --coklat4: #f8f3ef;
+    --coklat5: #f3e9e0;
+    --coklat6: #dbc4b1;
+    --coklat7: #ece5e1;
+    --coklat8: #f9f4f0;
+    --coklat9: #7e6149;
+    --hitam: #000;
+    --putih: #fff;
+    --judul1: 'Cormorant Garamond', serif;
+    --body: 'Open Sans', sans-serif;
+    --judul2: 'Playfair Display', serif;
+}
+
+/*index.php*/
+body {
+    background-color: var(--coklat8);
+    color: var(--coklat1);
+    font-family: var(--body);
+}
+.header{
+    background-color: var(--coklat8);
+    top: 0;
+    padding-top: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    text-transform: uppercase;
+}
+nav {
+    border-bottom: 1.5px solid var(--coklat1);
+}
+.nav-item a {
+    color: var(--coklat2);
+}
+.nav-item h2 {
+    color: var(--coklat2);
+    font-family: var(--judul2);
+    letter-spacing: 3px;
+}
+.container-satu, .container-dua, .container-tiga {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1.5px solid var(--coklat1);
+}
+.container-satu h3 {
+    padding-right: 50px;
+    letter-spacing: 2px;
+    font-family: var(--judul2);
+}
+.gambar-judul img {
+    width: 300px;
+    height: 400px;
+}
+.container-satu .judul-tiga {
+    color: var(--coklat2);
+    position: absolute;
+    padding-top: 205px;
+    font-size: 80px;
+    font-family: var(--judul1);
+}
+.gambar-content {
+    padding: 2px;
+}
+.content {
+    background-color: var(--coklat7);
+    padding: 30px 50px;
+    margin-left: 100px;
+    border-radius: 150px;
+    width: 310px;
+    height: 320px;
+    text-align: center;
+}
+h3, h4, h5, h6 {
+    color: var(--coklat2);
+    font-family: var(--judul2);
+}
+h4 {
+    padding-bottom: 15px;
+}
+p {
+    line-height: 18px;
+}
+.btn {
+    margin-top: 15px;
+    border: 1.5px solid var(--coklat2);
+    border-radius: 50px;
+}
+.btn a {
+    text-decoration: none;
+    color: var(--coklat9);
+}
+.container-tiga p {
+    font-size: 13px;
+}
+.harga {
+    border-top: 1.5px solid var(--coklat1);
+}
+
+/*web_produk.php*/
+.check-item {
+    display: flex;
+}
+.check-item div {
+    margin-right: 20px;
+}
+
+/*customer.php dan shop.php*/
+.container input{
+    display: block;
+    background-color: transparent;
+    color: var(--coklat1);
+    padding-top: 10px;
+    margin-bottom: 30px;
+    width: 50vw;
+    border: none;
+    border-bottom: 2px solid var(--coklat7);
+}
+.container input:focus {
+    outline: none !important;
+    border-bottom: 2px solid var(--coklat7);
+}

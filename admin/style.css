@@ -1,0 +1,108 @@
+:root {
+    --coklat1: #7d7874;
+    --coklat2: #535353;
+    --coklat3: #636161;
+    --coklat4: #f8f3ef;
+    --coklat5: #f3e9e0;
+    --coklat6: #dbc4b1;
+    --coklat7: #beb9b5;
+    --hitam: #000;
+    --putih: #fff;
+    --judul: 'Playfair Display', serif;
+    --body: 'Almarai', sans-serif;
+    --side: margin 0.25s ease-out;
+}
+#wrapper {
+    overflow-x: hidden;
+    color: var(--coklat1);
+    font-family: var(--body);
+    letter-spacing: 1px;
+}
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -16rem;
+    -webkit-transition: var(--side);
+    -moz-transition: var(--side);
+    -o-transition: var(--side);
+    transition: var(--side);
+}
+#sidebar-wrapper .sidebar-heading {
+    color: var(--coklat2);
+    font-size: 2rem;
+    margin-right: 5px;
+}
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+#page-content-wrapper .navbar {
+    color: var(--coklat2);
+    min-width: 100vw;
+}
+#sidebar-wrapper .sidebar-heading, .navbar {
+    font-family: var(--judul);
+}
+#page-content-wrapper {
+    margin-left: 20px;
+    background-color: var(--coklat4);
+}
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+#menu-toggle {
+    cursor: pointer;
+}
+.navbar {
+    color: var(--coklat3);
+}
+.list-group a {
+    text-decoration: none;
+    color: var(--coklat1);
+    font-family: var(--body);
+}
+.list-group {
+    border: none;
+    padding: 20px 20px;
+}
+.list-group a:hover {
+    color: var(--coklat2);
+}
+.container-fluid h2 {
+    padding-top: 1rem;
+    color: var(--coklat2);
+    font-family: var(--judul);
+}
+#page-content-wrapper th{
+    color: var(--coklat1);
+    background-color: var(--coklat5);
+}
+#page-content-wrapper .btn {
+    border-color: var(--coklat7);
+    border-width: 1.5px;
+    width: 80px;
+    margin: 5px 0 5px;
+}
+#page-content-wrapper a {
+    text-decoration: none;
+    color: var(--coklat3);
+}
+#page-content-wrapper .btn:hover {
+    background-color: var(--coklat6);
+    border-color: var(--coklat6);
+}
+#page-content-wrapper a:hover {
+    color: var(--putih);
+}
+#page-content-wrapper .form {
+    display: block;
+    background-color: transparent;
+    color: var(--coklat3);
+    padding-top: 10px;
+    margin-bottom: 30px;
+    width: 50vw;
+    border: none;
+    border-bottom: 2px solid var(--coklat7);
+}
+#page-content-wrapper .form:focus {
+    outline: none !important;
+    border-bottom: 2px solid var(--coklat7);
+}
